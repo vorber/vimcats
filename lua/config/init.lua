@@ -1,5 +1,5 @@
-require('set')
-require('remap')
+require('config.set')
+require('config.remap')
 
 -- NOTE: register the extra lze handlers because we want to use them.
 require('lze').register_handlers(require('lze.x'))
