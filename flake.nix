@@ -61,6 +61,11 @@
           clippy
           rust-analyzer
         ];
+        neonixdev = {
+          # also you can do this.
+          inherit (pkgs) nix-doc lua-language-server nixd;
+          # and each will be its own sub category
+        };
       };
 
       # This is for plugins that will load at startup without using packadd:
