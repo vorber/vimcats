@@ -17,6 +17,11 @@ vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix
 vim.keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
 vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
+vim.keymap.set("n", "<leader><leader>[", "<cmd>bprev<CR>", { desc = 'Previous buffer' })
+vim.keymap.set("n", "<leader><leader>]", "<cmd>bnext<CR>", { desc = 'Next buffer' })
+vim.keymap.set("n", "<leader><leader>l", "<cmd>b#<CR>", { desc = 'Last buffer' })
+vim.keymap.set("n", "<leader><leader>d", "<cmd>bdelete<CR>", { desc = 'delete buffer' })
+
 -- reselect visual block after indent
 vim.keymap.set("v", "<", "<gv", {remap = false})
 vim.keymap.set("v", ">", ">gv", {remap = false})
