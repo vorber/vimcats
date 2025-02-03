@@ -59,7 +59,7 @@
         rust = with pkgs; [
           rustfmt
           clippy
-          rust-analyzer
+          rust-analyzer-unwrapped
         ];
         neonixdev = {
           # also you can do this.
